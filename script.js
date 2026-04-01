@@ -39,7 +39,7 @@ function handleSymbol(symbol){
             break;
         case '+':
 
-        case '-':
+        case '−':
 
         case '×':
         
@@ -70,8 +70,8 @@ function flushOperation(intBuffer){
     if(previousOperator === '+'){
         runningTotal += intBuffer;
     }
-    else if(previousOperator === '-'){
-        runningTotal -= intBuffer
+    else if(previousOperator === '−'){
+        runningTotal -= intBuffer;
     }
     else if(previousOperator === '×'){
         runningTotal *= intBuffer;
